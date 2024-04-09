@@ -1,0 +1,36 @@
+.home{
+    margin: 15% 35% 15% 35%;
+    
+}
+body{
+    background-color: azure;
+}
+button{
+    background-color: aquamarine;
+    border: 5px solid yellowgreen;
+    font-size: 150%;
+}
+form{
+    background-color: blanchedalmond;
+    margin: 15% 37% 0% 37%;
+
+}
+form button{
+    background-color: aquamarine;
+    border: 5px solid yellowgreen;
+    font-size: 120%;
+}
+input[type="submit"]{
+    background-color: aquamarine;
+    border: 5px solid yellowgreen;
+    font-size: 120%;
+}
+input[type="text"]{
+    font-size: 120%;
+}
+table,tr,td{
+    border:none;
+    padding: 3%;
+    border-spacing: 5%;
+}
+

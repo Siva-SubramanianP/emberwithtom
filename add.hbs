@@ -1,0 +1,22 @@
+{{page-title "Ember"}}
+
+<center>
+<form action="addServer" method="post">
+    <fieldset>
+        <legend>Syslog-Add</legend>
+        <table>
+            <tr>
+                <td><label for="ip">IP:</label> </td>
+                <td><input type="text" name="ip" id="ip"></td>
+            </tr><br>
+            <tr>
+                <td><label for="port">Port:</label></td>
+                <td><input type="text" name="port" id="port"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="ADD SERVER"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <LinkTo @route="index"><button type="button">HOME</button></LinkTo>
+    </fieldset>
+</form>
+</center>
