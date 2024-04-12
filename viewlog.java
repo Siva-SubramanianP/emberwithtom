@@ -21,7 +21,7 @@ public class viewlog extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        String logFilePath = "C:\\Users\\siva-pt7595\\Documents\\logfile.log";
+        String logFilePath = "C:\\Users\\siva-pt7595\\Documents\\emulatorgenerated.log";
 
         BufferedReader reader = new BufferedReader(new FileReader(logFilePath));
         StringBuilder logContent = new StringBuilder();
