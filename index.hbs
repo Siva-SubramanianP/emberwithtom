@@ -1,0 +1,13 @@
+{{page-title "Homepage"}}
+<div class="home">
+  <center>
+    <h1>HOME PAGE</h1>
+    <div class="card">
+      <LinkTo @route="add"><button type="button">Add Server</button></LinkTo><br><br><br>
+      <LinkTo @route="view"><button type="button">View Logs</button></LinkTo><br><br><br>
+      <LinkTo @route="write"><button type="button">WriteToFile</button></LinkTo>
+    </div>
+  </center>
+</div>
+
+{{outlet}}
