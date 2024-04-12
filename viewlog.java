@@ -19,6 +19,7 @@ public class viewlog extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
+        response.setIntHeader("Refresh", 5); 
         PrintWriter out = response.getWriter();
 
         String logFilePath = "C:\\Users\\siva-pt7595\\Documents\\emulatorgenerated.log";
