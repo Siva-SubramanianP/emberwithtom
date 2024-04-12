@@ -27,10 +27,10 @@ public class writeFile extends HttpServlet {
         String client = request.getParameter("ip");
         PrintWriter out = response.getWriter();
         response.setContentType("text/plain");
-        String path="D:\\Learning\\emberwithtom\\logfile.log";
+        String path="D:\\Learning\\emberwithtom\\serverwrite.log";
         FileWriter file = new FileWriter(path);
         
-        String logFilePath = "C:\\Users\\siva-pt7595\\Documents\\serverwrite.log";
+        String logFilePath = "C:\\Users\\siva-pt7595\\Documents\\emulatorgenerated.log";
         BufferedReader reader = new BufferedReader(new FileReader(logFilePath));
         String line;
         while ((line = reader.readLine()) != null) {
