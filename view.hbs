@@ -19,6 +19,7 @@
 
 <script type="text/javascript">
     var wsurl;
+    var max= 1000000;
     if (window.location.protocol == 'http:') {
         wsurl = 'ws://';
     } else {
@@ -34,7 +35,7 @@
         console.log("Error", event);
     };
     function sendMsg() {
-        for(let i=0; i < 10000; i++) {
+        for(let i=0; i < max; i++) {
             var msg ="hello"; 
 
             if (msg !== '') {
