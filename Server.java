@@ -47,8 +47,7 @@ public class Server extends Thread {
     public void handleClient(Socket client, String port) {
         try (DataInputStream in = new DataInputStream(new BufferedInputStream(client.getInputStream()))) {
             String input;
-            for (int i = 0; i < 1000; i++) {
-//            while(true){
+            while(true){
                 input = in.readUTF();
                 String formattedInput = format(input, client, port);
                 view.queue.offer(formattedInput);
