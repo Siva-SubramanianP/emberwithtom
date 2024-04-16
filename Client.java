@@ -21,8 +21,7 @@ public class Client extends Thread {
 
             String[] inputs = {"error occur while running", "warning process still in buildup", "urgent call the clients", "immediate action need to be taken", "error occur while handling script", "warning file is not opened", "immediate switch the network as public", "Hi normal message", "urgent help needed from the team", "urgent help needed to the file server", "warning the file is opened", "error handle the exception", "error process the thread sequentially", "warning this takes too much time", "urgent modify server to function efficiently", "immediate alert the process thread", "error occur in the client", "immediate alert the file", "error handle the thread correctly", "immediate solve the problem", "urgent call the clients", "over"};
             int index = 0;
-            for (int i = 0; i < 1000; i++) {
-//            while(true){
+            while(true){
                 if (index > 20) {
                     index = 0;
                 }
