@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Bot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen" type="text/css">
+    </style>
+</head>
+<body>
+<h1 class="less">Message Screen</h1>
+<div class="new">
+    <button  onclick="return sendMsg();">SHOW LOGS</button>
+</div>
+<div>
+    <div id="dis" class="dis"></div>
+</div>
+
+
+<script type="text/javascript">
+    var wsurl;
+    if (window.location.protocol == 'http:') {
+        wsurl = 'ws://';
+    } else {
+        wsurl = 'wss://';
+    }
+    var ws = new WebSocket(wsurl + window.location.host + "/websocket/view");
+
+    ws.onmessage = function (event) {
+        var myspan = document.getElementById("dis");
+        myspan.innerHTML += event.data + "<br/>";
+    };
+    ws.onerror = function (event) {
+        console.log("Error", event);
+    };
+    function sendMsg() {
+        for(let i=0; i < 10000; i++) {
+            var msg ="hello"; 
+
+            if (msg !== '') {
+                ws.send(msg);
+            }
+        }
+    }
+</script>
+</body>
+</html>
